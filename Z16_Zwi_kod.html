@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwierzchowski - Zadanie16-KOD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: navy;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function obliczenia() {
+            var A = prompt("Podaj pierwszą liczbę A=");
+            var B = prompt("Podaj drugą liczbę B=");
+
+            // Konwertuj wprowadzone dane na liczby
+            A = parseInt(A);
+            B = parseInt(B);
+
+            // Wykonaj obliczenia według wzoru
+            var wynik = Math.pow((A + B), 3) + Math.pow(A, 3) + 3 * Math.pow(A, 2) * B + 3 * A * Math.pow(B, 2) + Math.pow(B, 3);
+
+            // Wyświetl wynik na stronie
+            document.write("wczytane liczby: A=" + A + " B=" + B + "<br>");
+            document.write("(A + B)^3 = " + wynik);
+        }
+    </script>
+
+    <button onclick="obliczenia()">Zwierzchowski - Zadanie16-KOD</button>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazwisko_ucznia - Zadanie15</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: navy;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function rozbijUlamki() {
+            var m_kow = prompt("Podaj wartość zmiennej m_kow:");
+
+            // Konwertuj wprowadzoną wartość na liczbę
+            m_kow = parseInt(m_kow);
+
+            // Sprawdź, czy m_kow jest liczbą naturalną większą od 0
+            if (m_kow <= 0 || isNaN(m_kow)) {
+                document.write("Podano błędną wartość dla m_kow.");
+                return;
+            }
+
+            // Zainicjuj zmienne
+            var ulamek1 = "1/" + (2 * m_kow);
+            var ulamek2 = "1/" + (2 * m_kow);
+
+            // Wyświetl wynik na stronie
+            document.write("Ułamek egipski 1/" + m_kow + " można rozłożyć na dwa takie same ułamki egipskie: " + ulamek1 + " + " + ulamek2);
+        }
+    </script>
+
+    <button onclick="rozbijUlamki()">Nazwisko_ucznia - Zadanie15</button>
+</body>
+</html>

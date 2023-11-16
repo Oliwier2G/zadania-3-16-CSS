@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwierzchowski- Zadanie13</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: navy;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function rozbijUlamki() {
+            var m_Zwi = prompt("Podaj wartość zmiennej m_Zwi:");
+
+            // Konwertuj wprowadzoną wartość na liczbę
+            m_Zwi = parseInt(m_Zwi);
+
+            // Sprawdź, czy m_kow jest liczbą naturalną większą od 0
+            if (m_Zwi <= 0 || isNaN(m_Zwi)) {
+                document.write("Podano błędną wartość dla m_Zwi.");
+                return;
+            }
+
+            // Zainicjuj zmienne
+            var ulamek1 = "1/" + (m_Zwi + 1);
+            var ulamek2 = "1/" + (m_Zwi * (m_Zwi + 1));
+
+            // Wyświetl wynik na stronie
+            document.write("Ułamek egipski 1/" + m_Zwi + " można rozłożyć na dwa ułamki egipskie: " + ulamek1 + " + " + ulamek2);
+        }
+    </script>
+
+    <button onclick="rozbijUlamki()">Zwierzchowski- - Zadanie13</button>
+</body>
+</html>

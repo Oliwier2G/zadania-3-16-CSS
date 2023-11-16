@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zwierzchowski - Zadanie12</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: green;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function obliczenia() {
+            var D1_Zwi = prompt("Podaj pierwszy dzień (D1_Zwi):");
+            var G1_Zwi = prompt("Podaj pierwszą godzinę (G1_Zwi):");
+            var D2_Zwi = prompt("Podaj drugi dzień (D2_Zwi):");
+            var G2_Zwi = prompt("Podaj drugą godzinę (G2_Zwi):");
+
+            // Konwertuj wprowadzone dane na liczby
+            D1_Zwi= parseInt(D1_Zwi);
+            G1_Zwi = parseInt(G1_Zwi);
+            D2_Zwi = parseInt(D2_Zwi);
+            G2_Zwi = parseInt(G2_Zwi);
+
+            // Oblicz różnicę w sekundach między dniami i godzinami
+            var roznicaSekund = ((D1_Zwi - D2_Zwi) * 24 + (G1_Zwi - G2_Zwi)) * 60 * 60;
+
+            // Wyświetl wynik na stronie
+            document.write("Ilość sekund: " + roznicaSekund);
+        }
+    </script>
+
+    <button onclick="obliczenia()">Zwierzchowski - Zadanie12</button>
+</body>
+</html>
